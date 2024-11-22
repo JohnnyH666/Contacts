@@ -1,0 +1,8 @@
+.table-container{
+  width: 100%;
+  flex:1;
+  overflow: auto;
+  margin-top: 100px;
+  border: 2px solid rgb(0, 3, 99);
+  border-radius: 8px;
+}
