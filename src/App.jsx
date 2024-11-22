@@ -8,12 +8,12 @@ import Navbar from './Components/Navbar/Navbar';
 const App = () => {
   return (
     <div>
-      <Router basename="/test_repository">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Router>
     </div>
   )
 }
