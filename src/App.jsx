@@ -8,7 +8,7 @@ import Navbar from './Components/Navbar/Navbar';
 const App = () => {
   return (
     <div>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router future={{v7_startTransition: true, v7_relativeSplatPath: true,}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
