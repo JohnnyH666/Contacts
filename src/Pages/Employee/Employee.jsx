@@ -17,47 +17,53 @@ const reviews = [
     name: "Johnny Huang",
     title: "Software Engineer",
     date: "November 22, 2024",
-    review: "Working here has been a fantastic experience! The team is collaborative, and the work environment is inspiring.",
+    image: "/static/images/cards/contemplative-reptile.jpg",
+    review: "Hi, I’m Johnny! I’m passionate about software development and love solving complex problems with clean code. I’ve been in the tech industry for over 1 years and enjoy working in collaborative teams to build innovative solutions.",
   },
   {
-    name: "Jane Doe",
+    name: "Sarah Lee",
     title: "Product Manager",
-    date: "October 18, 2024",
-    review: "I love the creative freedom I get in my role. The management is supportive and always encourages innovation.",
-  },
-  {
-    name: "Chris Smith",
-    title: "UX Designer",
-    date: "September 15, 2024",
-    review: "The company fosters a positive culture, and I feel valued as part of the design team. Truly a great place to grow.",
-  },
-  {
-    name: "Jane Smith",
-    title: "Project Manager",
     date: "November 23, 2024",
-    review: "I’ve been part of this team for over two years now. The leadership is supportive, and there’s always room for growth.",
+    image: "/static/images/cards/product-manager.jpg",
+    review: "Hello! I'm Sarah, a product manager with a strong background in user-centered design and agile methodologies. I enjoy taking customer feedback and turning it into actionable insights that lead to better products and experiences.",
   },
   {
-    name: "Mike Johnson",
+    name: "Michael Brown",
     title: "UX Designer",
     date: "November 24, 2024",
-    review: "Great company culture and an amazing place for creative professionals. I love working on innovative projects with this team.",
+    image: "/static/images/cards/ux-designer.jpg",
+    review: "Hi, I’m Michael! I’m a UX designer who thrives on creating intuitive and delightful user experiences. I enjoy collaborating with cross-functional teams to design products that meet user needs while pushing the boundaries of design.",
   },
   {
     name: "Emily Davis",
     title: "Marketing Specialist",
     date: "November 25, 2024",
-    review: "The team is dynamic and full of passionate individuals. It’s a great environment for both personal and professional growth.",
+    image: "/static/images/cards/marketing-specialist.jpg",
+    review: "Hey, I’m Emily! I have a background in digital marketing and a passion for developing creative strategies that drive growth. Whether it's through social media, content, or email marketing, I’m always looking for new ways to engage customers.",
+  },
+  {
+    name: "James Wilson",
+    title: "Data Scientist",
+    date: "November 26, 2024",
+    image: "/static/images/cards/data-scientist.jpg",
+    review: "Hello! I'm James, a data scientist with a love for turning data into insights. My expertise is in machine learning and statistical modeling, and I enjoy working with large datasets to solve real-world problems and drive business decision-making.",
+  },
+  {
+    name: "James King",
+    title: "Data Scientist",
+    date: "November 26, 2024",
+    image: "/static/images/cards/data-scientist.jpg",
+    review: "Hello! I'm James, a data scientist with a love for turning data into insights. My expertise is in machine learning and statistical modeling, and I enjoy working with large datasets to solve real-world problems and drive business decision-making.",
   }
 ];
 
-const Rating = () => {
+const Employee = () => {
   return (
     <div className='home'>
       <Navbar/>
       <div style={{display: "flex", flexDirection: "row", gap: "20px", flexWrap: "wrap", marginTop: "100px", justifyContent: "center"}}>
         {reviews.map((review, index) => (
-            <Card key={index} sx={{ maxWidth: 380 }}>
+            <Card key={index} sx={{ maxWidth: 380 }} className="contact-card">
               <CardHeader
                 avatar={
                   <Avatar sx={{}} aria-label="profile">
@@ -96,4 +102,4 @@ const Rating = () => {
     </div>
   )
 }
-export default Rating;
+export default Employee;

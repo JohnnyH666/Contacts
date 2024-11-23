@@ -55,10 +55,10 @@ const Navbar = () => {
     <nav className='container'>
       <img src={logo} alt="" className='logo' onClick={() => handleNavigation('/')} />
       <ul>
-      <li><Button variant="text" onClick={() => handleNavigation('/')}>Home</Button></li>
-        <li><Button variant="text">My Employee</Button></li>
-        <li><Button variant="text" onClick={() => handleNavigation('/contact')}>My Contacts</Button></li>
-        <li><Button variant="text" onClick={() => handleNavigation('/rating')}>Rating</Button></li>
+      <li><Button variant='contained' onClick={() => handleNavigation('/')}>Home</Button></li>
+        <li><Button variant='contained' onClick={() => handleNavigation('/employee')}>My Employee</Button></li>
+        <li><Button variant='contained'  onClick={() => handleNavigation('/contact')}>My Contacts</Button></li>
+        <li><Button variant='contained' onClick={() => handleNavigation('/rating')}>Rating</Button></li>
       </ul>
       <div>
         <Avatar sx={{ bgcolor: deepPurple[500] }} onClick={handleClick}>JH</Avatar>
