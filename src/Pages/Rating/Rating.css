@@ -1,14 +1,7 @@
-.home card-container {
-  margin-top: 200px;
-  overflow: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-
-.home contact-card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
+.contact-card {
+  display: flex;
+  flex-direction: row;
+  width: 100%; 
   max-width: 345px;
   margin-bottom: 20px;
 }
