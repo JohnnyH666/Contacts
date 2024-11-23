@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import { Paper, Typography} from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
