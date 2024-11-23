@@ -58,7 +58,7 @@ const Navbar = () => {
       <li><Button variant="text" onClick={() => handleNavigation('/')}>Home</Button></li>
         <li><Button variant="text">My Employee</Button></li>
         <li><Button variant="text" onClick={() => handleNavigation('/contact')}>My Contacts</Button></li>
-        <li><Button variant="text">Rating</Button></li>
+        <li><Button variant="text" onClick={() => handleNavigation('/rating')}>Rating</Button></li>
       </ul>
       <div>
         <Avatar sx={{ bgcolor: deepPurple[500] }} onClick={handleClick}>JH</Avatar>
